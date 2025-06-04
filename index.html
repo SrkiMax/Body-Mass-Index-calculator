@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Body Mass Index Calculator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <main class="container-fluid">
+    <section class="hero">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.svg" alt="Logo" width="30" height="24">
+          </a>
+        </div>
+      </nav>
+      <div class="text-and-calculator">
+        <div class="hero-text">
+          <h1 class="text-preset-1-semi-bold">Body Mass Index Calculator</h1>
+          <p class="text-preset-6-regular under-title-text">Better understand your weight in relation to your height
+            using our
+            body mass index (BM) calculator. While BMI is not the sole determinant
+            of a healthy weight, it offers a valuable starting point to evaluate
+            your overall health and well-being.</p>
+        </div>
+
+
+        <div class="calculator">
+          <h4 class="text-preset-4-semi-bold">Enter your details below</h4>
+          <div class="calculator-form">
+
+            <fieldset class="radioButtons">
+              <div class="radio-metric">
+
+                <input type="radio" name="Radios" id="Radios1" value="option1" checked>
+                <label class="form-check-label text-preset-6-semi-bold" for="Radios1">Metric</label>
+              </div>
+              <div class="radio-imperial">
+
+                <input type="radio" name="Radios" id="Radios2" value="option2">
+                <label class="form-check-label text-preset-6-semi-bold" for="Radios2">Imperial</label>
+              </div>
+            </fieldset>
+
+            <div class="height-weight">
+              <div class="left">
+
+                <div class="height-div">
+                  <p class="text-preset-7-regular">Height</p>
+
+                  <div class="input-wrapper">
+                    <input type="number" class="height-input">
+                    <span class="unit text-preset-4-semi-bold">cm</span>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="right">
+
+                <div class="weight-div">
+                  <p class="text-preset-7-regular">Weight</p>
+
+                  <div class="input-wrapper">
+                    <input type="number" class="weight-input">
+                    <span class="unit text-preset-4-semi-bold">kg</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="results">
+            <div class="BMI">
+              <h4 class="text-preset-4-semi-bold">Welcome!</h4>
+              <p class="text-preset-7-regular">Enter your height and weight and you’ll see your BMI result here</p>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+    <section class="section2 container-fluid">
+      <div class="picture-and-text">
+        <img src="assets/images/image-man-eating.webp" alt="">
+        <div class="what-results-mean">
+          <h2 class="text-preset-2-semi-bold">What your BMI result means</h2>
+          <p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
+            healthy weight may lower your chances of experiencing health issues later on,
+            such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced
+            fat and sugar content, incorporating ample fruits and vegetables. Additionally,
+            strive for regular physical activity, ideally about 30 minutes daily for
+            five days a week.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3 container-fluid">
+      <div class="healthy-habits-div">
+        <div class="eating healthy-habits">
+          <img src="assets/images/icon-eating.svg" alt="">
+          <div class="title-and-text">
+            <h3>Healthy eating</h3>
+            <p>Healthy eating promotes weight control, disease prevention, better digestion,
+              immunity, mental clarity, and mood.</p>
+          </div>
+        </div>
+
+        <div class="exercise healthy-habits">
+          <img src="assets/images/icon-exercise.svg" alt="">
+          <div class="title-and-text">
+            <h3>Regular exercise</h3>
+            <p>Exercise improves fitness, aids weight control, elevates mood, and reduces disease
+              risk, fostering wellness and longevity.</p>
+          </div>
+        </div>
+
+        <div class="sleeping healthy-habits">
+          <img src="assets/images/icon-sleep.svg" alt="">
+          <div class="title-and-text">
+            <h3>Adequate sleep</h3>
+            <p>Sleep enhances mental clarity, emotional stability, and physical wellness, promoting
+              overall restoration and rejuvenation.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+  </main>
+
+
+
+  Body Mass Index Calculator
+
+  Better understand your weight in relation to your height using our
+  body mass index (BM) calculator. While BMI is not the sole determinant
+  of a healthy weight, it offers a valuable starting point to evaluate
+  your overall health and well-being.
+
+  Enter your details below
+
+  Metric
+  Imperial
+
+  Height
+  Weight
+
+  Your BMI is...
+
+  <!-- add score -->
+
+  Your BMI suggests you're <!-- add classification -->.
+  Your ideal weight is between <!-- add range -->.
+
+  What your BMI result means
+
+  A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
+  healthy weight may lower your chances of experiencing health issues later on,
+  such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced
+  fat and sugar content, incorporating ample fruits and vegetables. Additionally,
+  strive for regular physical activity, ideally about 30 minutes daily for
+  five days a week.
+
+  Healthy eating
+  Healthy eating promotes weight control, disease prevention, better digestion,
+  immunity, mental clarity, and mood.
+
+  Regular exercise
+  Exercise improves fitness, aids weight control, elevates mood, and reduces disease
+  risk, fostering wellness and longevity.
+
+  Adequate sleep
+  Sleep enhances mental clarity, emotional stability, and physical wellness, promoting
+  overall restoration and rejuvenation.
+
+  Limitations of BMI
+
+  Although BMI is often a practical indicator of healthy weight, it is not suited for
+  every person. Specific groups should carefully consider their BMI outcomes, and in
+  certain cases, the measurement may not be beneficial to use.
+
+  Gender
+  The development and body fat composition of girls and boys vary with age. Consequently,
+  a child's age and gender are considered when evaluating their BMI.
+
+  Age
+  In aging individuals, increased body fat and muscle loss may cause BMI to underestimate
+  body fat content.
+
+  Muscle
+  BMI may misclassify muscular individuals as overweight or obese, as it doesn't
+  differentiate muscle from fat.
+
+  Pregnancy
+  Expectant mothers experience weight gain due to their growing baby. Maintaining a
+  healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
+  and child.
+
+  Race
+  Certain health concerns may affect individuals of some Black and Asian origins at
+  lower BMIs than others. To learn more, it is advised to discuss this with your
+  GP or practice nurse.
+
+  <script src="bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

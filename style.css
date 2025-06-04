@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+:root {
+
+    --Grey-500: #5E6E85;
+    --Grey-300: #ACC1DE;
+    --Blue-900: #253347;
+    --Blue-500: #345FF6;
+    --Blue-300: #B3D3F1;
+    --Blue-100: #E1E7FE;
+}
+
+.text-preset-1-semi-bold {
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: -5%;
+    font-weight: 600;
+}
+
+.text-preset-2-semi-bold {
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: -5%;
+    font-weight: 600;
+}
+
+.text-preset-3-semi-bold {
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: -5%;
+    font-weight: 600;
+}
+
+.text-preset-4-semi-bold {
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -5%;
+    font-weight: 600;
+}
+
+.text-preset-5-semi-bold {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -5%;
+    font-weight: 600;
+}
+
+.text-preset-6-semi-bold {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: 600;
+}
+
+.text-preset-6-regular {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: 400;
+}
+
+.text-preset-7-bold {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: 700;
+}
+
+.text-preset-7-regular {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: 400;
+}
+
+
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.navbar {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+
+
+
+.navbar img {
+    width: 64px;
+    height: 64px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+.hero {
+    position: relative;
+    height: 737px;
+    background: white;
+    padding-left: clamp(3rem, 5vw + 1rem, 9rem);
+    padding-right: clamp(3rem, 5vw + 1rem, 9rem);
+    padding-top: 78px;
+    padding-bottom: 88px;
+    /* overflow: hidden; */
+
+}
+
+.hero::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(to right, #6dd5fa, #2980b9); */
+    background: linear-gradient(to right, #E7F5FE, #B3D3F1);
+    height: 100%;
+    width: 70%;
+    border-bottom-right-radius: 2rem;
+    /* z-index: 0; */
+}
+
+
+
+.text-and-calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: rgba(255, 255, 255, 1); */
+
+
+}
+
+h1 {
+    color: var(--Blue-900);
+}
+
+.hero-text {
+    background-color: transparent;
+    width: 100%;
+    /* height: 340px; */
+    height: auto;
+
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.under-title-text {
+    color: var(--Grey-500);
+}
+
+.calculator {
+    background: white;
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    border-radius: 1rem;
+    justify-content: space-around;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+
+}
+
+.calculator h4 {
+    color: var(--Blue-900);
+    margin-bottom: 20px;
+
+}
+
+.radioButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* #Radios1, #Radios2 {
+    height: 31px;
+    width: 31px;
+} */
+
+.radio-metric,
+.radio-imperial {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.radioButtons label {
+    cursor: pointer;
+}
+
+/*Customizing the radio button*/
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 31px;
+    height: 31px;
+    border: 1px solid var(--Grey-500);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+
+}
+
+input[type="radio"]:checked {
+    background-color: var(--Blue-100);
+    border: none;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 8px;
+    left: 8px;
+    background-color: var(--Blue-500);
+
+
+}
+
+
+
+.height-weight {
+    display: flex;
+    gap: 24px;
+}
+
+.left {
+    width: 100%;
+}
+
+
+.right {
+    width: 100%;
+}
+
+.left p,
+.right p {
+    margin-top: 24px;
+}
+
+.height-input,
+.weight-input {
+    height: 61px;
+    border-radius: 0.8rem;
+    border: 1px solid var(--Grey-500);
+    width: 100%;
+    padding: 24px;
+    padding-right: 64px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.height-input:focus,
+.weight-input:focus {
+    outline: none;
+    border: 2px solid var(--Blue-500)
+}
+
+/* This hides the up and down arrow on input[type="number"] */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+
+}
+
+
+
+
+.height-div p,
+.weight-div p {
+    color: var(--Grey-500);
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.input-wrapper {
+    position: relative;
+
+}
+
+.unit {
+    color: var(--Blue-500);
+    position: absolute;
+    /* z-index: 1; */
+    right: 24px;
+    top: 15px;
+}
+
+.results {
+    background-color: var(--Blue-500);
+    color: white;
+    margin-top: 32px;
+    padding: 32px;
+    border-radius: 1rem 6rem 6rem 1rem;
+}
+
+
+.BMI h4 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: ;
+}
+
+
+
+
+
+/* Section2 */
+
+.section2 {
+    padding-top: 57px;
+    max-width: 1160px;
+
+
+}
+
+.picture-and-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(1.5rem, 4vw, 4rem);
+}
+
+.picture-and-text img {
+    width: 564px;
+    height: 533px;
+}
+
+.what-results-mean {
+    padding-top: 12rem;
+    padding-left: clamp(3rem, 5vw + 1rem, 9rem);
+    padding-right: clamp(3rem, 5vw + 1rem, 9rem);
+}
+
+.what-results-mean h2 {
+    font-size: 32px;
+}
+
+
+
+/* Section3 */
+
+
+/*Promeni padding za section 3, super je na manjim ekranima, ali na vecem mozda nije.
+A mozde i ne moras nista da menjas, samo dodaj margin top*/
+.section3 {
+    max-width: 1160px;
+    padding-left: clamp(3rem, 5vw + 1rem, 9rem);
+    padding-right: clamp(3rem, 5vw + 1rem, 9rem);
+    margin-top: 10rem;
+}
+
+.healthy-habits-div {}
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+
+    .navbar img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero::before {
+        height: 80%;
+        width: 100%;
+
+    }
+
+
+    .navbar {
+        margin-bottom: 30px;
+    }
+
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .text-and-calculator {
+        grid-template-columns: 1fr;
+        top: auto;
+        transform: none;
+        margin-top: 0;
+
+    }
+
+    .hero {
+        height: auto;
+        padding: 30px 3rem;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .hero-text p {
+        padding-top: 0px;
+    }
+
+    .calculator {
+        margin-top: 0;
+    }
+
+    .height-weight {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* Section2 */
+
+
+
+    .picture-and-text {
+        gap: 1rem;
+
+    }
+
+    .picture-and-text img {
+        width: 100%;
+        height: auto;
+        margin-left: -5rem;
+
+    }
+
+    .what-results-mean {
+        padding-top: 8.5rem;
+        //width: 80%;
+    }
+
+    .what-results-mean h2 {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+
+
+
+
+
+}
+
+
+@media(max-width: 1000px) {
+
+    /* Section2 */
+
+
+
+    .picture-and-text {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picture-and-text img {
+        width: 100%;
+        max-width: 696px;
+        height: auto;
+        margin-left: 0;
+
+    }
+
+    .what-results-mean {
+        padding-top: 1.5rem;
+        //width: 90%;
+    }
+
+
+
+}
+
+
+@media (max-width: 500px) {
+
+    body {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .hero {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .height-weight {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .right {}
+
+    .calculator {
+        padding: 24px;
+    }
+
+
+    .results {
+        border-radius: 1rem;
+
+
+    }
+}
