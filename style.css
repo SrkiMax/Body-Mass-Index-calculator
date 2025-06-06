@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 :root {
@@ -104,6 +104,7 @@ body {
 
 .container-fluid {
     padding: 0;
+
 }
 
 
@@ -324,7 +325,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .BMI h4 {
     color: white;
     margin-top: 0;
-    margin-bottom: ;
+
 }
 
 
@@ -335,7 +336,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .section2 {
     padding-top: 57px;
-    max-width: 1160px;
+    padding-left: clamp(3rem, 5vw + 1rem, 9rem);
+    padding-right: clamp(3rem, 5vw + 1rem, 9rem);
+
 
 
 }
@@ -344,6 +347,13 @@ input[type="number"]::-webkit-outer-spin-button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: clamp(1.5rem, 4vw, 4rem);
+
+
+
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0 padding-right 0
 }
 
 .picture-and-text img {
@@ -353,8 +363,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .what-results-mean {
     padding-top: 12rem;
-    padding-left: clamp(3rem, 5vw + 1rem, 9rem);
-    padding-right: clamp(3rem, 5vw + 1rem, 9rem);
+    /* padding-left: clamp(3rem, 5vw + 1rem, 9rem);
+    padding-right: clamp(3rem, 5vw + 1rem, 9rem); */
 }
 
 .what-results-mean h2 {
@@ -369,13 +379,45 @@ input[type="number"]::-webkit-outer-spin-button {
 /*Promeni padding za section 3, super je na manjim ekranima, ali na vecem mozda nije.
 A mozde i ne moras nista da menjas, samo dodaj margin top*/
 .section3 {
-    max-width: 1160px;
+
+    margin-top: 8rem;
     padding-left: clamp(3rem, 5vw + 1rem, 9rem);
     padding-right: clamp(3rem, 5vw + 1rem, 9rem);
-    margin-top: 10rem;
 }
 
-.healthy-habits-div {}
+.healthy-habits-wrapper {
+    display: flex;
+    gap: 32px;
+
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.healthy-habits {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 40px;
+}
+
+.healthy-habits img {
+    width: 64px;
+}
+
+.healthy-habits {}
+
+.title-and-text h3 {
+    margin-bottom: 15px;
+    color: var(--Blue-900);
+}
+
+.title-and-text p {
+    color: var(--Grey-500);
+}
+
 
 
 
@@ -407,9 +449,6 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 
     }
 
-    .hero-text h1 {
-        font-size: 48px;
-    }
 
     .text-and-calculator {
         grid-template-columns: 1fr;
@@ -421,13 +460,17 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 
     .hero {
         height: auto;
-        padding: 30px 3rem;
+        /* padding: 30px 3rem; */
     }
 
     .hero-text {
         padding-right: 0;
         text-align: center;
         gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
     }
 
     .hero-text p {
@@ -446,10 +489,13 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 
     /* Section2 */
 
-
+    .section2 {
+        padding-top: 25px;
+    }
 
     .picture-and-text {
         gap: 1rem;
+
 
     }
 
@@ -471,7 +517,16 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
     }
 
 
+    /* Section3 */
 
+    .healthy-habits-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .healthy-habits {
+        flex-direction: row;
+    }
 
 
 
@@ -538,5 +593,12 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
         border-radius: 1rem;
 
 
+    }
+
+    .section2 {}
+
+
+    .section3 {
+        margin-top: 5rem
     }
 }
