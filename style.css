@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 :root {
@@ -407,7 +407,7 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
     width: 64px;
 }
 
-.healthy-habits {}
+
 
 .title-and-text h3 {
     margin-bottom: 15px;
@@ -601,4 +601,20 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
     .section3 {
         margin-top: 5rem
     }
+
+    .healthy-habits-wrapper {
+        gap: 1.7rem;
+    }
+
+    .healthy-habits {
+        flex-direction: column;
+
+    }
+
+    .healthy-habits img {}
+
+    .title-and-text h3 {
+        margin-top: -20px;
+    }
+
 }
