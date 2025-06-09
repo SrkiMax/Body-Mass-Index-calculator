@@ -662,13 +662,14 @@ input[type="number"]::-webkit-outer-spin-button {
         display: grid;
         /* grid-template-columns: repeat(2, 1fr); */
 
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     }
 
     .bmi-header {
 
         grid-column: 1 / -1;
+        text-align: center;
     }
 
 
@@ -677,15 +678,35 @@ input[type="number"]::-webkit-outer-spin-button {
     .gender,
     .age,
     .muscle,
-    .pregnancy,
-    .race {
+    .pregnancy {
         grid-column: auto !important;
+    }
+
+    .race {
+        grid-column: 1 / -1;
+        /* Span full row */
+        justify-self: center;
+        max-width: 50%;
+
+
     }
 
 
 
 
 }
+
+
+@media (max-width: 712px) {
+
+    .race {
+
+        max-width: 100%;
+
+
+    }
+}
+
 
 
 @media (max-width: 500px) {
