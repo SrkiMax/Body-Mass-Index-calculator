@@ -84,8 +84,10 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+
+
 .navbar {
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-left: 0;
 }
@@ -112,8 +114,8 @@ body {
     position: relative;
     height: 737px;
     background: white;
-    padding-left: clamp(3rem, 5vw + 1rem, 9rem);
-    padding-right: clamp(3rem, 5vw + 1rem, 9rem);
+    padding-left: clamp(1rem, 5vw, 4rem);
+    padding-right: clamp(1rem, 5vw, 4rem);
     padding-top: 78px;
     padding-bottom: 88px;
     /* overflow: hidden; */
@@ -143,7 +145,7 @@ body {
     align-items: center;
 
     position: relative;
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
     top: 50%;
     transform: translateY(-50%);
@@ -179,8 +181,8 @@ h1 {
     padding: 32px;
     border-radius: 1rem;
     justify-content: space-around;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -336,8 +338,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .section2 {
     padding-top: 57px;
-    padding-left: clamp(3rem, 5vw + 1rem, 9rem);
-    padding-right: clamp(3rem, 5vw + 1rem, 9rem);
+    padding-left: clamp(1rem, 5vw, 4rem);
+    padding-right: clamp(1rem, 5vw, 4rem);
 
 
 
@@ -350,10 +352,11 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 
-    max-width: 1160px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0 padding-right 0
+    padding-left: 0;
+    padding-right 0;
 }
 
 .picture-and-text img {
@@ -363,8 +366,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .what-results-mean {
     padding-top: 12rem;
-    /* padding-left: clamp(3rem, 5vw + 1rem, 9rem);
-    padding-right: clamp(3rem, 5vw + 1rem, 9rem); */
+
 }
 
 .what-results-mean h2 {
@@ -376,20 +378,19 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Section3 */
 
 
-/*Promeni padding za section 3, super je na manjim ekranima, ali na vecem mozda nije.
-A mozde i ne moras nista da menjas, samo dodaj margin top*/
+
 .section3 {
 
     margin-top: 8rem;
-    padding-left: clamp(3rem, 5vw + 1rem, 9rem);
-    padding-right: clamp(3rem, 5vw + 1rem, 9rem);
+    padding-left: clamp(1rem, 5vw, 4rem);
+    padding-right: clamp(1rem, 5vw, 4rem);
 }
 
 .healthy-habits-wrapper {
     display: flex;
     gap: 32px;
 
-    max-width: 1160px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
@@ -419,8 +420,98 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 }
 
 
+/* Section4 */
+
+.section4 {
+    margin-top: 8rem;
+
+    padding-left: clamp(1rem, 5vw, 4rem);
+    padding-right: clamp(1rem, 5vw, 4rem);
+
+}
+
+.section4 h2,
+.section4 h3 {
+    color: var(--Blue-900);
+}
+
+.section4 p {
+    color: var(--Grey-500);
+}
+
+.bmi-layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
 
 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.bmi-header {
+    grid-column: 1 / span 5;
+}
+
+.gender {
+    grid-column: 7 / span 4;
+}
+
+.age {
+    grid-column: 4 / span 4;
+}
+
+.muscle {
+    grid-column: 8 / span 4;
+}
+
+.pregnancy {
+    grid-column: 2 / span 4;
+}
+
+.race {
+    grid-column: 6 /span 4
+}
+
+.intro {
+    max-width: 800px;
+
+}
+
+/* .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+} */
+
+.card {
+    border-radius: 16px;
+    padding: 1.5rem;
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px)
+}
+
+.icon-and-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card img {
+    width: 32px;
+}
+
+.icon-and-title h3 {
+    margin-bottom: 0;
+}
 
 
 
@@ -460,6 +551,7 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 
     .hero {
         height: auto;
+        padding-bottom: 40px;
         /* padding: 30px 3rem; */
     }
 
@@ -508,7 +600,7 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 
     .what-results-mean {
         padding-top: 8.5rem;
-        //width: 80%;
+
     }
 
     .what-results-mean h2 {
@@ -531,6 +623,8 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 
 
 }
+
+@media(min-width: 1024px) {}
 
 
 @media(max-width: 1000px) {
@@ -557,8 +651,37 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 
     .what-results-mean {
         padding-top: 1.5rem;
-        //width: 90%;
+
     }
+
+
+    /* Section4 */
+
+
+    .bmi-layout {
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    }
+
+    .bmi-header {
+
+        grid-column: 1 / -1;
+    }
+
+
+    /* Remove fixed column placements */
+
+    .gender,
+    .age,
+    .muscle,
+    .pregnancy,
+    .race {
+        grid-column: auto !important;
+    }
+
 
 
 
@@ -572,9 +695,16 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
         padding-right: 0
     }
 
-    .hero {
+    .hero,
+    .section2,
+    .section3,
+    .section4 {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .section2 {
+        margin-top: -15px;
     }
 
     .height-weight {
@@ -582,7 +712,7 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
         gap: 0;
     }
 
-    .right {}
+
 
     .calculator {
         padding: 24px;
@@ -595,7 +725,7 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 
     }
 
-    .section2 {}
+
 
 
     .section3 {
@@ -611,7 +741,7 @@ A mozde i ne moras nista da menjas, samo dodaj margin top*/
 
     }
 
-    .healthy-habits img {}
+
 
     .title-and-text h3 {
         margin-top: -20px;
