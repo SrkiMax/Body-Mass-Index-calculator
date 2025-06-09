@@ -114,8 +114,8 @@ body {
     position: relative;
     height: 737px;
     background: white;
-    padding-left: clamp(1rem, 5vw, 4rem);
-    padding-right: clamp(1rem, 5vw, 4rem);
+    padding-left: clamp(1rem, 5vw, 2rem);
+    padding-right: clamp(1rem, 5vw, 2rem);
     padding-top: 78px;
     padding-bottom: 88px;
     /* overflow: hidden; */
@@ -338,8 +338,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .section2 {
     padding-top: 57px;
-    padding-left: clamp(1rem, 5vw, 4rem);
-    padding-right: clamp(1rem, 5vw, 4rem);
+    padding-left: clamp(1rem, 5vw, 2rem);
+    padding-right: clamp(1rem, 5vw, 2rem);
 
 
 
@@ -382,8 +382,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .section3 {
 
     margin-top: 8rem;
-    padding-left: clamp(1rem, 5vw, 4rem);
-    padding-right: clamp(1rem, 5vw, 4rem);
+    padding-left: clamp(1rem, 5vw, 2rem);
+    padding-right: clamp(1rem, 5vw, 2rem);
 }
 
 .healthy-habits-wrapper {
@@ -425,8 +425,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .section4 {
     margin-top: 8rem;
 
-    padding-left: clamp(1rem, 5vw, 4rem);
-    padding-right: clamp(1rem, 5vw, 4rem);
+    padding-left: clamp(1rem, 5vw, 2rem);
+    padding-right: clamp(1rem, 5vw, 2rem);
 
 }
 
