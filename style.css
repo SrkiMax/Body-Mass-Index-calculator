@@ -18,63 +18,63 @@
 .text-preset-1-semi-bold {
     font-size: 64px;
     line-height: 110%;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
     font-weight: 600;
 }
 
 .text-preset-2-semi-bold {
     font-size: 48px;
     line-height: 110%;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
     font-weight: 600;
 }
 
 .text-preset-3-semi-bold {
     font-size: 32px;
     line-height: 110%;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
     font-weight: 600;
 }
 
 .text-preset-4-semi-bold {
     font-size: 24px;
     line-height: 120%;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
     font-weight: 600;
 }
 
 .text-preset-5-semi-bold {
     font-size: 20px;
     line-height: 120%;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
     font-weight: 600;
 }
 
 .text-preset-6-semi-bold {
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     font-weight: 600;
 }
 
 .text-preset-6-regular {
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     font-weight: 400;
 }
 
 .text-preset-7-bold {
     font-size: 14px;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     font-weight: 700;
 }
 
 .text-preset-7-regular {
     font-size: 14px;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     font-weight: 400;
 }
 
@@ -247,24 +247,52 @@ input[type="radio"]:checked::before {
 
 
 
-.height-weight {
+.height-weight-metric {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+}
+
+.height-weight-imperial {
+    gap: 4px;
+    display: none;
+}
+
+
+.height-div {
+    width: 100%;
+
+}
+
+.weight-div {
+    width: 100%;
+}
+
+.height-div p,
+.weight-div p {
+    margin-top: 24px;
+}
+
+
+.imperial-height-inputs,
+.imperial-weight-inputs {
     display: flex;
     gap: 24px;
 }
 
-.left {
+.imperial-height-inputs .input-wrapper {
+    width: 100%;
+}
+
+.imperial-weight-inputs .input-wrapper {
     width: 100%;
 }
 
 
-.right {
-    width: 100%;
-}
 
-.left p,
-.right p {
-    margin-top: 24px;
-}
+
 
 .height-input,
 .weight-input {
@@ -328,8 +356,43 @@ input[type="number"]::-webkit-outer-spin-button {
     color: white;
     margin-top: 0;
 
+
 }
 
+.resultsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.score {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.scoreWrapper {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.bmiHeader {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.bmiText {
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 400;
+
+}
 
 
 
@@ -356,7 +419,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
-    padding-right 0;
+    padding-right: 0;
 }
 
 .picture-and-text img {
@@ -493,6 +556,7 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border: none;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -515,6 +579,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 
+
+
+/* Media Queries */
 
 @media (max-width: 1100px) {
 
@@ -573,11 +640,14 @@ input[type="number"]::-webkit-outer-spin-button {
         margin-top: 0;
     }
 
-    .height-weight {
+    .height-weight-metric {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
+    .score {
+        font-size: 48px;
+    }
 
     /* Section2 */
 
@@ -683,8 +753,8 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 
     .race {
-        grid-column: 1 / -1;
         /* Span full row */
+        grid-column: 1 / -1;
         justify-self: center;
         max-width: 50%;
 
@@ -707,6 +777,9 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
+@media (max-width: 585px) {}
+
+
 
 
 @media (max-width: 500px) {
@@ -728,11 +801,16 @@ input[type="number"]::-webkit-outer-spin-button {
         margin-top: -15px;
     }
 
-    .height-weight {
+    .height-weight-metric {
         grid-template-columns: 1fr;
         gap: 0;
     }
 
+
+    .imperial-height-inputs {
+        /* display: flex; */
+        gap: 16px;
+    }
 
 
     .calculator {
@@ -742,8 +820,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .results {
         border-radius: 1rem;
+    }
 
+    .resultsContainer {
 
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
     }
 
 
